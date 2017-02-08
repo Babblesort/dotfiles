@@ -1,1 +1,64 @@
-/home/dev1/dotfiles/git/gitconfig.symlink
+[user]
+    name = Paul McConnell
+    email = pmc.consult@gmail.com
+[core]
+    excludesfile = /home/dev1/.gitignore_global
+    autocrlf = input
+	editor = vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+    ui = true
+[color "diff"]
+    meta = yellow bold
+[diff]
+    compactionHeuristic = true
+[push]
+    default = simple
+[alias]
+    ap = add -p
+    f = fetch
+    s = status -s
+	co = checkout
+  cop = checkout -p
+  s = status -sb
+	st = status
+    cf = commit --fixup
+	ci = commit
+    c = commit
+    ca = commit --amend
+    cm = commit -m
+  cp = cherry-pick
+    cpc = cherry-pick --continue
+    cia = commit --amend --no-edit
+    dc = diff --cached
+    edit = !git reset --soft HEAD^ && git reset .
+    p = push -u origin HEAD
+    pf = !git p -f
+    br = branch
+    rebae = !git fetch && git rebase origin/release
+    rebai = !git rebase -i `git merge-base HEAD origin/release`
+    rc = rebase --continue
+    rhu = !git fetch && git reset --hard @{u}
+    ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)' -
+    pushit = push -fu origin HEAD
+  update-ember = !sh -c 'git fetch ember-cli && git format-patch -1 --relative $1 --stdout | git am -3 --directory frontend' -
+  lg = log --graph --oneline --format=\"%C(yellow)%h %C(auto)%d%C(dim white) %s\"
+  watch = !watch -c git lg --color
+  showst = stash show -p
+[pull]
+    rebase = true
+[branch]
+    autosetuprebase = always
+[rebase]
+	autosquash = true
+	autostash = true
+[diff-so-fancy]
+	markEmptyLines = false
+	stripLeadingSymbols = false
+	changeHunkIndicators = false
+[interactive]
+  diffFilter = diff-so-fancy --patch-mode | less --tabs=4 -RFX
+[merge]
+	conflictstyle = diff3
+[stash]
+	showPatch = true
