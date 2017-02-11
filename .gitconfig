@@ -5,7 +5,7 @@
   excludesfile = /home/dev1/.gitignore_global
   autocrlf = input
   editor = vim
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = diff-so-fancy | less --tabs=2 -RFX
 [color]
   ui = true
 [color "diff"]
