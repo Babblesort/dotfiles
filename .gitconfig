@@ -1,10 +1,10 @@
 [user]
-	name = Paul McConnell
-	email = pmc.consult@gmail.com
+  name = Paul McConnell
+  email = pmc.consult@gmail.com
 [core]
-	excludesfile = /Users/paul.mcconnell/.gitignore_global
+  excludesfile = /Users/paul.mcconnell/.gitignore_global
   autocrlf = input
-	editor = vim
+  editor = vim
   pager = diff-so-fancy | less --tabs=2 -RFX
 [color]
   ui = true
@@ -30,7 +30,6 @@
   cpc = cherry-pick --continue
   cia = commit --amend --no-edit
   dc = diff --cached
-  edit = !git reset --soft HEAD^ && git reset .
   p = push -u origin HEAD
   pf = !git p -f
   br = branch
@@ -58,11 +57,3 @@
   conflictstyle = diff3
 [stash]
   showPatch = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree 2.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[commit]
-	template = /Users/paul.mcconnell/.stCommitMsg
