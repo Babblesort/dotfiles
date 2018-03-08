@@ -8,6 +8,7 @@
     "editor.fontWeight": "300",
     "editor.renderWhitespace": "none",
     "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 60,    
     "files.exclude": {
         "**/karma_html": true,
         "**/.git": true,
