@@ -40,7 +40,7 @@
     "workbench.colorCustomizations": {
         "editorBracketMatch.background": "#40404080",
         "editorBracketMatch.border": "#404040A0",
-        "editorLineNumber.foreground": "#40406070",
+        "editorLineNumber.foreground": "#404060F0",
         "editor.lineHighlightBorder": "#40404020",
         "editorCursor.foreground": "#909090A0"
     },
