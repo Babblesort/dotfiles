@@ -15,6 +15,7 @@
 [push]
   default = simple
 [alias]
+  configs = config --list --show-origin
   ap = add -p
   f = fetch
   s = status -s
