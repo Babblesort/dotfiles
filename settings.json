@@ -20,9 +20,8 @@
   "workbench.editor.enablePreview": false,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "prettier.singleQuote": true,
   "terminal.integrated.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 11,
   "terminal.integrated.cursorStyle": "line",
   "search.exclude": {
     "**/node_modules": true,
@@ -55,15 +54,25 @@
   "editor.codeLens": false,
   "workbench.fontAliasing": "default",
   "workbench.startupEditor": "none",
-  "workbench.panel.defaultLocation": "right",
   "breadcrumbs.enabled": true,
   "eslint.autoFixOnSave": true,
-  "eslint.provideLintTask": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "references.preferredLocation": "view",
   "editor.gotoLocation.multiple": "goto",
   "editor.renderLineHighlight": "all",
   "editor.suggest.maxVisibleSuggestions": 5,
   "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": true
+  "editor.cursorSmoothCaretAnimation": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "debug.node.autoAttach": "on",
+  "debug.toolBarLocation": "docked",
+  "workbench.panel.defaultLocation": "right"
 }
