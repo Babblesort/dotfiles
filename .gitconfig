@@ -32,7 +32,7 @@
   cia = commit --amend --no-edit
   dc = diff --cached
   p = push -u origin HEAD
-  pf = !git p -f
+  pf = push --force-with-lease
   br = branch
   rc = rebase --continue
   rhu = !git fetch && git reset --hard @{u}
