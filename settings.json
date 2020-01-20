@@ -28,7 +28,7 @@
     "**/bower_components": true,
     "**/.vscode": true
   },
-  "editor.autoIndent": true,
+  "editor.autoIndent": "advanced",
   "editor.renderIndentGuides": false,
   "guides.normal.color.dark": "rgba(60, 60, 60, 0.3)",
   "guides.active.color.dark": "rgba(128, 128, 0, 0.45)",
@@ -55,10 +55,13 @@
   "workbench.fontAliasing": "default",
   "workbench.startupEditor": "none",
   "breadcrumbs.enabled": true,
-  "eslint.autoFixOnSave": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "references.preferredLocation": "view",
-  "editor.gotoLocation.multiple": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.renderLineHighlight": "all",
   "editor.suggest.maxVisibleSuggestions": 5,
   "editor.smoothScrolling": true,
@@ -74,5 +77,13 @@
   },
   "debug.node.autoAttach": "on",
   "debug.toolBarLocation": "docked",
-  "workbench.panel.defaultLocation": "right"
+  "workbench.panel.defaultLocation": "right",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.format.semicolons": "insert",
+  "prettier.singleQuote": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "extensions.ignoreRecommendations": false
 }
