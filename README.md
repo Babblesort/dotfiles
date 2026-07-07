@@ -13,6 +13,7 @@ path edits the same file, so the repo and live config can never silently drift.
 | `zshrc`    | `~/.zshrc`      | zsh config (oh-my-zsh, powerlevel10k, plugins)        |
 | `vimrc`    | `~/.vimrc`      | Vim config (habamax colorscheme, editing defaults)    |
 | `p10k.zsh` | `~/.p10k.zsh`   | powerlevel10k prompt configuration                    |
+| `gitconfig`| `~/.gitconfig`  | git configuration (user, aliases, defaults)           |
 
 ## Install on a new machine
 

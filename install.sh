@@ -28,5 +28,6 @@ echo "Installing dotfiles from $DOTFILES"
 link zshrc             .zshrc
 link vimrc             .vimrc
 link p10k.zsh          .p10k.zsh
+link gitconfig         .gitconfig
 
 echo "Done."

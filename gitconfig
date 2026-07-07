@@ -1,0 +1,61 @@
+[user]
+	name = Paul.McConnell
+	email = paul.mcconnell@wwt.com
+[core]
+  autocrlf = input
+  editor = vim
+  pager = diff-so-fancy | less --tabs=2 -RFX
+[color]
+  ui = true
+[color "diff"]
+  meta = yellow bold
+[diff]
+  compactionHeuristic = true
+[push]
+  default = simple
+	autoSetupRemote = true
+[alias]
+  configs = config --list --show-origin
+  ap = add -p
+  f = fetch
+  s = status -s
+  co = checkout
+  cop = checkout -p
+  st = status -sb
+  cf = commit --fixup
+  ci = commit
+  c = commit
+  ca = commit --amend
+  cm = commit -m
+  cp = cherry-pick
+  cpc = cherry-pick --continue
+  cia = commit --amend --no-edit
+  dc = diff --cached
+  p = push -u origin HEAD
+  pf = push --force-with-lease
+  br = branch
+  rc = rebase --continue
+  rhu = !git fetch && git reset --hard @{u}
+  remaster = !git fetch && git rebase origin/master
+  rebai = !git fetch && git rebase -i origin/master 
+  ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)' -
+  lg = log --oneline --graph --format=\"%C(yellow)%h %C(auto)%d %C(dim white)%s\"
+  lg2 = !sh -c 'git log --oneline --format=\"%C(yellow)%h %C(auto)%d %C(dim white)%<($1,trunc)%s\"' - $((`tput cols`-10))
+  watch = !watch -c git lg --color
+  showst = stash show -p
+[pull]
+  rebase = true
+[branch]
+  autosetuprebase = always
+[rebase]
+  autosquash = true
+  autostash = true
+[diff-so-fancy]
+  markEmptyLines = false
+  stripLeadingSymbols = false
+  changeHunkIndicators = false
+[merge]
+  conflictstyle = diff3
+[stash]
+  showPatch = true
+
