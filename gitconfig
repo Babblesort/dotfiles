@@ -4,7 +4,7 @@
 [core]
   autocrlf = input
   editor = vim
-  pager = diff-so-fancy | less --tabs=2 -RFX
+  pager = delta
 [color]
   ui = true
 [color "diff"]
@@ -50,10 +50,18 @@
 [rebase]
   autosquash = true
   autostash = true
-[diff-so-fancy]
-  markEmptyLines = false
-  stripLeadingSymbols = false
-  changeHunkIndicators = false
+# delta colorizes interactive hunk selection too (git add -p / checkout -p).
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true                    # n / N jump between files in the pager
+  line-numbers = true
+  tabs = 2                           # preserve the old `less --tabs=2` width
+  syntax-theme = Nord                # muted, low-contrast dark theme
+  # keep decorations quiet (no box-drawing around files/hunks)
+  file-style = "#8fbcbb"
+  file-decoration-style = ul
+  hunk-header-decoration-style = none
 [merge]
   conflictstyle = diff3
 [stash]
