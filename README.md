@@ -24,6 +24,19 @@ git clone <repo-url> ~/projects/dotfiles
 
 `install.sh` is safe to re-run. Existing symlinks are replaced; a real file
 already at the target is backed up to `<file>.backup` before being linked.
+It also runs `brew bundle` to install the Homebrew packages in `Brewfile`
+(skipped with a notice if Homebrew isn't installed).
+
+## Dependencies
+
+Some configs assume external tools are installed. These are listed in
+`Brewfile` and installed automatically by `install.sh`:
+
+| Tool        | Used by                                    |
+|-------------|--------------------------------------------|
+| `git-delta` | `gitconfig` (`core.pager = delta`)         |
+
+To install/update them manually: `brew bundle --file=Brewfile`.
 
 ## Adding a new dotfile
 
