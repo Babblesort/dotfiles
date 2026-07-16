@@ -11,3 +11,5 @@ brew "nvm"
 
 # standalone CLI tool, no dotfiles config
 brew "bat"
+brew "gh"
+brew "awscli"
