@@ -8,3 +8,6 @@ brew "git-delta"
 
 # nvm sourcing configured in zshrc
 brew "nvm"
+
+# standalone CLI tool, no dotfiles config
+brew "bat"
