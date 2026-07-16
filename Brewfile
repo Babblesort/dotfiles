@@ -5,3 +5,6 @@
 
 # git pager configured in gitconfig (core.pager = delta)
 brew "git-delta"
+
+# nvm sourcing configured in zshrc
+brew "nvm"
