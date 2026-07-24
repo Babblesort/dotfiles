@@ -38,9 +38,10 @@
   rhu = !git fetch && git reset --hard @{u}
   remaster = !git fetch && git rebase origin/master
   rebai = !git fetch && git rebase -i origin/master 
+  remain = !git fetch && git rebase origin/main
+  remai = !git fetch && git rebase -i origin/main
   ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)' -
   lg = log --oneline --graph --format=\"%C(yellow)%h %C(auto)%d %C(dim white)%s\"
-  lg2 = !sh -c 'git log --oneline --format=\"%C(yellow)%h %C(auto)%d %C(dim white)%<($1,trunc)%s\"' - $((`tput cols`-10))
   watch = !watch -c git lg --color
   showst = stash show -p
 [pull]
