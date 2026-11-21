@@ -29,6 +29,7 @@ link zshrc             .zshrc
 link vimrc             .vimrc
 link p10k.zsh          .p10k.zsh
 link gitconfig         .gitconfig
+link claude/CLAUDE.md  .claude/CLAUDE.md
 
 # Install Homebrew packages the configs depend on (see Brewfile).
 if command -v brew >/dev/null 2>&1; then
