@@ -17,6 +17,12 @@
 - For config changes: prefer showing the diff/plan, then applying. Verify changes rather than assuming they took.
 - I like learning the tooling as we go, not just having it done silently.
 
+## The board
+- "The board", "on the board", "check a card", "add a card" always mean the GitHub Project (kanban + issues) at https://github.com/orgs/wwt/projects/111/views/2 — org `wwt`, project number `111`. This is the primary place my work is tracked.
+- Use the `gh` CLI (`gh project ...`, `gh issue ...`) to read/modify it. Cards are GitHub issues in the project.
+- If a repo has an `AGENTS.md` with board/workflow conventions (card structure, labels), read it before touching the board; those repo rules override this general pointer.
+- Creating or editing cards is outward-facing and visible to others: confirm before adding or changing a card unless I've explicitly told you to.
+
 ## Git
 - To sync a branch with main, always rebase the branch onto main, then push with `--force-with-lease`. Never merge main into a branch. Rebases leave a cleaner graph in branch visualizer apps.
 - Never force-push main or any shared/default branch, and use `--force-with-lease`, never plain `--force`.
