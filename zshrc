@@ -28,6 +28,9 @@ ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=green
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+# Default AWS CLI/SDK profile (defined in ~/.aws/config)
+export AWS_PROFILE="wwt-atc-bootcamp"
+
 # ls colors (BSD/macOS ls, enabled by oh-my-zsh's `ls -G` alias).
 # 11 fg/bg letter pairs; a=black b=red c=green d=brown e=blue f=magenta
 # g=cyan h=grey, uppercase=bright, x=default. Differs from the built-in
